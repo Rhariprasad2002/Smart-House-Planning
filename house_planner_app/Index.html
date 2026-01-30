@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart House Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Smart House Planning Website</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="companies.html">Companies</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<label>Plot Size (sq ft)</label>
+<input type="number" id="plot">
+
+<label>Budget (₹)</label>
+<input type="number" id="budget">
+
+<label>Bedrooms</label>
+<input type="number" id="bedrooms">
+
+<label>House Type</label>
+<select id="houseType">
+    <option value="modern">Modern</option>
+    <option value="traditional">Traditional</option>
+    <option value="luxury">Luxury</option>
+</select>
+
+<button onclick="generatePlan()">Generate Plan</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
